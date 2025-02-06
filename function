@@ -1,11 +1,11 @@
 msg.payload.lat = msg.payload.lat || 0;
 msg.payload.lon = msg.payload.lon || 0;
-msg.payload.altitude = msg.payload.altitude || 0; // Add altitude with default
+msg.payload.altitude = msg.payload.altitude || 0;
 
 const maxDistanceMiles = 15;
 const maxAltitudeFt = 1000;
 
-const r = 3960; // Earth's radius in miles
+const r = 3960;
 const degreesPerMile = (1 / (r * Math.cos(Math.PI / 180 * msg.payload.lat))) * (180 / Math.PI);
 
 const theta = Math.random() * 360;
