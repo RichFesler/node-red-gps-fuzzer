@@ -15,7 +15,7 @@
 //   msg.payload.altitude  - number: modified altitude
 //
 // REVISIONS:
-// 03JUL2025 - Initial version, Rich Fesler <rfesler@gmail.com>
+// 01SEP2024 - Initial version, Rich Fesler <rfesler@gmail.com>
 //
 
 // Default to 0 if values are not set
