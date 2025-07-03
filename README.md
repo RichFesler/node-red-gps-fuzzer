@@ -4,7 +4,7 @@
 
 This Node-RED function node injects randomized error into GPS coordinates to help obscure your exact location. Designed for mobile use where privacy or simulation is needed — not intended for static setups.
 
-If you're logging or broadcasting your position publicly (e.g., Meshtastic, MQTT, live maps), this tool can help mask your true location by adding controlled randomness to latitude, longitude, and altitude.
+If you're logging or broadcasting your position publicly (e.g., Meshtastic, MQTT, live maps), this tool can help mask your true location by adding configurable randomness to latitude, longitude, and altitude.
 
 > 💡 Useless if you're stationary. This is for things that move.
 
@@ -12,10 +12,9 @@ If you're logging or broadcasting your position publicly (e.g., Meshtastic, MQTT
 
 ### ⚙️ What It Does
 
-- Adds randomized error up to ±15 miles from the actual position
-- Modifies altitude within ±100 feet
+- Adds randomized error up to a configurable distance and altitude
 - Produces realistic lat/lon drift using spherical trigonometry
-- Defaults lat/lon/alt to `0` if not provided
+- Leaves missing GPS values untouched (defaults to 0)
 
 ---
 
